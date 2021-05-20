@@ -1,0 +1,280 @@
+body {
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+.title {
+  background: url("./images/wood.jpg") no-repeat;
+  height: 65vh;
+  color: white;
+}
+
+.title a {
+  color: white;
+  text-decoration: none;
+}
+
+.title_name {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_name h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+}
+header {
+  display: flex;
+}
+
+.header_left {
+  width: 45%;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  margin-right: 20px;
+}
+
+.menu_svg {
+  height: 50px;
+  width: 50px;
+}
+
+.about {
+  margin: 10% 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about_left {
+  height: 100%;
+}
+
+.about_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about_right_text {
+  margin-left: 20px;
+}
+
+.buttonOneTwo {
+  position: relative;
+  margin-bottom: 25px;
+  border: 2px solid rgb(228, 215, 180);
+  color: black;
+  text-decoration: none;
+  padding: 7px 15px;
+  width: 30%;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  border-top: 1px solid black;
+  background: black;
+  width: 50%;
+  transform: translateY(-50%);
+}
+
+.about_right_text h2 {
+  border-left: 10px solid rgb(228, 215, 180);
+  padding-left: 7px;
+}
+
+.about_right_text p {
+  color: rgb(146, 146, 146);
+}
+
+.chair_img {
+  height: 300px;
+  -webkit-box-shadow: -57px -29px 0px 0px rgb(228, 215, 180);
+  -moz-box-shadow: -57px -29px 0px 0px rgb(228, 215, 180);
+  box-shadow: -57px -29px 0px 0px rgb(228, 215, 180);
+}
+
+.salon_img {
+  margin-left: 20px;
+  height: 300px;
+  -webkit-box-shadow: 57px -29px 0px 0px rgb(228, 215, 180);
+  -moz-box-shadow: 57px -29px 0px 0px rgb(228, 215, 180);
+  box-shadow: 57px -29px 0px 0px rgb(228, 215, 180);
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-auto-rows: minmax(20px, auto);
+  background: url(./images/work.jpg) no-repeat;
+  background-size: cover;
+}
+
+.team h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: auto;
+  padding: 10px 20px;
+  grid-column: 8/14;
+  grid-row: 4;
+  background-color: white;
+}
+
+.team h3 {
+  font-size: 32px;
+  grid-column: 11/17;
+  grid-row: 5;
+  color: white;
+}
+
+.team p {
+  grid-column: 11/17;
+  grid-row: 7;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.meet_button {
+  position: relative;
+  border: 2px solid rgb(248, 232, 11);
+  color: white;
+  text-decoration: none;
+  padding: 7px 15px;
+  grid-column: 12/15;
+  grid-row: 16;
+  text-align: center;
+  margin-top: auto;
+}
+
+.meet_button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  border-top: 1px solid white;
+  width: 50%;
+  transform: translateY(-50%);
+}
+
+.logo {
+  position: relative;
+  grid-column: 19/20;
+  grid-row: 1/2;
+  margin-top: 10px;
+  color: white;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  border-top: solid rgba(241, 210, 28, 1);
+  border-width: 2px;
+  width: 40%;
+  transform: translateY(-50%);
+}
+
+.team_left {
+  background-color: rgb(29, 24, 24);
+  grid-column: 1/4;
+  grid-row: 1/18;
+}
+
+.yellow_filter {
+  background-color: rgba(241, 210, 28, 0.4);
+  grid-column: 4/9;
+  grid-row: 1/18;
+}
+
+.team_right {
+  background-color: rgb(29, 24, 24);
+  grid-column: 9/21;
+  grid-row: 1/18;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.contact_content {
+  width: 40%;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form .name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact form .name input {
+  width: 45%;
+}
+
+.contact form input,
+.contact form .textarea {
+  margin-top: 1.5rem;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 1px solid gray;
+}
+
+.contact form .email {
+  width: 60%;
+}
+
+::placeholder {
+  color: rgb(241, 149, 28);
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+
+footer .logo::before,
+.title_name .logo::before {
+  border-width: 10px;
+  top: 50%;
+  left: 20%;
+}
+
+.header_nav .logo::before {
+  top: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    flex-direction: column;
+  }
+  .about_right_text {
+    width: 100%;
+  }
+  .about_left {
+    width: 100%;
+  }
+  .salon_img {
+    height: 200px;
+  }
+}
